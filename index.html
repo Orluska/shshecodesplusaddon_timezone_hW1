@@ -19,14 +19,14 @@
       function showSelectedCity(event) {
         let tokyoTime = moment()
           .tz("Asia/Tokyo")
-          .format("dddd, MMMM d, YYYY h:m a");
+          .format("dddd, MMMM d, YYYY hh:mm A");
         console.log(tokyoTime);
         let parisTime = moment()
           .tz("Europe/Paris")
-          .format("dddd, MMMM d, YYYY h:m a");
+          .format("dddd, MMMM d, YYYY hh:mm A");
         let sydneyTime = moment()
           .tz("Australia/Sydney")
-          .format("dddd, MMMM d, YYYY h:m a");
+          .format("dddd, MMMM d, YYYY hh:mm A");
 
         if (event.target.value === "tokyo") {
           alert(`It is ${tokyoTime} in Tokyo`);
